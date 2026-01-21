@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Google Form in Table Format</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <!-- Name -->
+            <tr>
+                <td><label for="name">Name of the applicant</label></td>
+                <td colspan="3"><input type="text" id="name" placeholder="Enter your name" style="width:95%"></td>
+            </tr>
+
+            <!-- Age & Phone -->
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" placeholder="Enter your age"></td>
+                <td><label for="phone">Phone Number</label></td>
+                <td><input type="tel" id="phone" placeholder="Enter your number"></td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td colspan="3"><textarea id="address" rows="4" cols="50" placeholder="Enter your address" style="width:95%"></textarea></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td rowspan="2">Gender</td>
+                <td colspan="3">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <!-- State -->
+            <tr>
+                <td><label for="state">State</label></td>
+                <td colspan="2">
+                    <select id="state">
+                        <option>Select the state</option>
+                        <option>AP</option>
+                        <option>TN</option>
+                        <option>MP</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Checkboxes -->
+            <tr>
+                <td rowspan="2"><label>Check the boxes</label></td>
+                <td colspan="3">
+                    <input type="checkbox" id="true" name="options">
+                    <label for="true">True</label>
+
+                    <input type="checkbox" id="false" name="options">
+                    <label for="false">False</label>
+
+                    <input type="checkbox" id="both" name="options">
+                    <label for="both">Both A & B</label>
+                </td>
+            </tr>
+
+            <!-- DOB -->
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td colspan="2"><input type="date" id="dob"></td>
+            </tr>
+
+            <!-- Buttons -->
+            <tr>
+                <td colspan="4" align="center">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
